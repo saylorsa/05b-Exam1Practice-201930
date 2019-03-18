@@ -38,7 +38,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the green doc-string for the:
+# DONE: 2.  READ the green doc-string for the:
 #   - is_prime
 #   - sum_of_digits
 # functions defined below.  You do NOT need to understand their
@@ -148,6 +148,18 @@ def run_test_problem1a():
     #   print('Test 1 expected:', expected)
     #   print('       actual:  ', actual)
     # -------------------------------------------------------------------------
+
+    # Test 3:
+    expected = 1.135
+    actual = problem1a(1, -2)
+    print('Test 3 expected:', expected)
+    print('       actual  :', actual)
+
+    # Test 4:
+    expected = 1.278
+    actual = problem1a(30, 100)
+    print('Test 4 expected:', expected)
+    print('       actual  :', actual)
 
 
 def problem1a(m, n):
