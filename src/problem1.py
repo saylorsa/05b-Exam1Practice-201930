@@ -259,7 +259,7 @@ def problem1b(m, f):
            since there are 44 primes between 5 and 200.
      """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     ###########################################################################
@@ -273,6 +273,11 @@ def problem1b(m, f):
     #    TIME ESTIMATE:   10 to 15 minutes.
     # -------------------------------------------------------------------------
 
+    count = 0
+    for k in range(m,(f*m)+1):
+        if is_prime(k):
+            count = count + 1
+    return count
 
 def run_test_problem1c():
     """ Tests the   problem1c   function. """
