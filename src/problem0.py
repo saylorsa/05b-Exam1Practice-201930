@@ -269,7 +269,7 @@ def problem0b(n):
            since there are 46 primes between 2 and 200.
      """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ###########################################################################
@@ -279,6 +279,12 @@ def problem0b(n):
     ###########################################################################
     # ------------------------------------------------------------------
 
+    count = 0
+
+    for k in range(2, n+1):
+        if is_prime(k):
+            count = count + 1
+    return count
 
 def run_test_problem0c():
     """ Tests the   problem0c  function. """
