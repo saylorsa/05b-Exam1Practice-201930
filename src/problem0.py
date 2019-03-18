@@ -343,7 +343,7 @@ def problem0c(circle, n, window):
       :type window: rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ###########################################################################
@@ -352,6 +352,13 @@ def problem0c(circle, n, window):
     ###########################################################################
     # -------------------------------------------------------------------------
 
+    circle.attach_to(window)
+    center = circle.center
+
+    for k in range(n):
+        circle1 = rg.Circle(rg.Point(center.x + ((k+1)*2*circle.radius), center.y), circle.radius)
+        circle1.attach_to(window)
+        window.render(0.5)
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
