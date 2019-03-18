@@ -28,7 +28,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 import testing_helper
 import time
-
+import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -180,7 +180,7 @@ def problem1a(m, n):
       -- If m is 30 and n is 100, the correct answer is about 1.278.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -------------------------------------------------------------------------
     # -------------------------------------------------------------------------
@@ -189,6 +189,13 @@ def problem1a(m, n):
     #    TIME ESTIMATE:   10 minutes.
     # -------------------------------------------------------------------------
 
+    m2 = (m) ** 2
+    n2 = (n) ** 2
+
+    total = 0
+    for k in range(m2, n2 + 1):
+        total = total + math.sin(k)
+    return total
 
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
